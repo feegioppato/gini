@@ -92,7 +92,7 @@ As funções recebem um `pd.Series` (`dados`) ou uma lista de séries (`decomp()
 
 Considerando uma população muito desigual onde uma pessoa concentra toda a renda, espera-se um índice de gini próximo à um. Já em uma amostra com igualdade perfeita (todos indivíduos com a mesma renda), espera-se um índice de gini de zero
 
-![ex_gini.png](Gini%20936cc3145439425891819fa97f962c46/ex_gini.png)
+![ex_gini.png](https://github.com/feegioppato/gini/blob/main/ex_gini.png?raw=true)
 
 ### Função `decomp()`
 
@@ -100,10 +100,10 @@ Para exemplificar a função `decomp()`, utilizei o conjunto de dados *wage1*, p
 
 Realizei a decomposição do índice de gini para homens e mulheres.
 
-![ex_decomp.png](Gini%20936cc3145439425891819fa97f962c46/ex_decomp.png)
+![ex_decomp.png](https://github.com/feegioppato/gini/blob/main/ex_decomp.png?raw=true)
 
 ### Função `lorenz()`
 
 Para exemplificar a função `lorenz()` plotei a Curva de Lorenz para a amostra das mulheres.
 
-![ex_lorenz.png](Gini%20936cc3145439425891819fa97f962c46/ex_lorenz.png)
+![ex_lorenz.png](https://github.com/feegioppato/gini/blob/main/ex_lorenz.png?raw=true)
