@@ -1,18 +1,18 @@
 # Gini
 
----
+
 
 Calculadora do Índice de Gini.
 
 ## Descrição
 
----
+
 
 Calculadora de Índice de Gini que permite a decomposição do mesmo em grupos ou estratos presentes no conjunto de dados. O método de cálculo utilizado foi visto na disciplina optativa Análise de Dados Socioeconômicos, oferecida pelo Departamento de Economia da Unesp Araraquara.
 
 Para o conjunto inteiro, a fórmula utilizada é a seguinte:
 
-$$G=1-\frac{1}{n}\cdot\sum_{i=1}^{n}(\phi_{i} + \phi_{i-1})$$
+$G=1-\frac{1}{n}\cdot\sum_{i=1}^{n}(\phi_{i} + \phi_{i-1})$
 
 onde:
 
@@ -22,7 +22,7 @@ $\phi_{i}$: proporção de renda acumulada pelo i-ésimo indivíduo da populaç�
 
 Para dados agrupados, a fórmula é:
 
-$$G=G_{e}+\sum_{h=1}^{k}{\pi_{h}\cdot Y_{h}\cdot G_{h}}\space+G_s$$
+$G=G_{e}+\sum_{h=1}^{k}{\pi_{h}\cdot Y_{h}\cdot G_{h}}\space+G_s$
 
 onde:
 
@@ -79,13 +79,13 @@ Plota a Curva de Lorenz do conjunto passado como argumento.
 
 ## Entradas
 
----
+
 
 As funções recebem um `pd.Series` (`dados`) ou uma lista de séries (`decomp()`).
 
 ## Exemplos
 
----
+
 
 ### Função `gini()`
 
