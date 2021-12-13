@@ -13,11 +13,9 @@ import matplotlib.pyplot as plt
 class Variaveis:
     
     def __init__(self):
-        
         pass
         
-        
-    
+
     def n(self, dados):
         """ Retorna o tamanho da amostra. """
         
@@ -40,7 +38,6 @@ class Variaveis:
         renda_total = np.sum(dados)
         
         return renda_total
-    
 
 
     def renda_acumulada(self, dados):
@@ -50,12 +47,6 @@ class Variaveis:
         
         return renda_acum
     
-
-        
-        
-        
-          
-        
         
 class Gini(Variaveis):
     
