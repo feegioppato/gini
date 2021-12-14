@@ -12,29 +12,30 @@ Calculadora de Índice de Gini que permite a decomposição do mesmo em grupos o
 
 Para o conjunto inteiro, a fórmula utilizada é a seguinte:
 
-<img src="https://render.githubusercontent.com/render/math?math=G=1-\frac{1}{n}\cdot\sum_{i=1}^{n}(\phi_{i}%20%2B%20\phi_{i-1})">
-
+<p align = "center">
+<img src="https://render.githubusercontent.com/render/math?math=\large G=1-\frac{1}{n}\cdot\sum_{i=1}^{n}(\phi_{i}%2B\phi_{i-1})">
+</p>
 onde:
 
-n: número de indivíduos no conjunto de dados;
+<img src="https://render.githubusercontent.com/render/math?math=\large n">: número de indivíduos no conjunto de dados;
 
-<img src="https://render.githubusercontent.com/render/math?math=\phi_{i}">: proporção de renda acumulada pelo i-ésimo indivíduo da população
+<img src="https://render.githubusercontent.com/render/math?math=\large \phi_{i}">: proporção de renda acumulada pelo i-ésimo indivíduo da população
 
 Para dados agrupados, a fórmula é:
-
-<img src="https://render.githubusercontent.com/render/math?math=G=G_{e}%2B\sum_{h=1}^{k}{\pi_{h}\cdot Y_{h}\cdot G_{h}}\space+G_s">
-
+<p align="center">
+<img src="https://render.githubusercontent.com/render/math?math=\large G=G_{e}%2B\sum_{h=1}^{k}{\pi_{h} Y_{h} G_{h}}\cdot+G_s">
+</p>
 onde:
 
-<img src="https://render.githubusercontent.com/render/math?math=G_e=1-\sum_{h=1}^{k}\pi_h\cdot(\phi_h+\phi_{h-1})">: Gini intergrupos;
+<img src="https://render.githubusercontent.com/render/math?math=\large G_e=1-\sum_{h=1}^{k}\pi_h\cdot(\phi_h%2B+\phi_{h-1})">: Gini intergrupos;
 
-<img src="https://render.githubusercontent.com/render/math?math=\phi_{h}">: proporção da população apropriada pelo h-ésimo grupo;
+<img src="https://render.githubusercontent.com/render/math?math=\large \phi_{h}">: proporção da população apropriada pelo h-ésimo grupo;
 
-<img src="https://render.githubusercontent.com/render/math?math=Y_{h}">: proporção da renda acumulada pelo h-ésimo grupo;
+<img src="https://render.githubusercontent.com/render/math?math=\large Y_{h}">: proporção da renda acumulada pelo h-ésimo grupo;
 
-<img src="https://render.githubusercontent.com/render/math?math=G_h=1-\frac{1}{n_h}\cdot\sum_{i=1}^{n_h}(\phi_{h,i}%2B\phi_{h,i-1})">: Gini intragrupos (índice de gini de cada grupo);
+<img src="https://render.githubusercontent.com/render/math?math=\large G_h=1-\frac{1}{n_h}\cdot\sum_{i=1}^{n_h}\cdot(\phi_{h,i}%2B\phi_{h,i-1})">: Gini intragrupos (índice de gini de cada grupo);
 
-<img src="https://render.githubusercontent.com/render/math?math=G_{s}">: Índice de Gini de sobreposição.
+<img src="https://render.githubusercontent.com/render/math?math=\large G_{s}">: Índice de Gini de sobreposição.
 
 Além de calcular e decompor o índice, o script dá também a possibilidade de plotar a Curva de Lorenz do conjunto de dados passado como argumento para a função.
 
@@ -68,8 +69,8 @@ Realiza a decomposição do índice de gini para cada subconjunto passado como a
 Retorna uma tupla cujos elementos são, respectivamente:
 
 1. Lista ordenada contendo o índice de gini de cada grupo;
-2. Gini intergrupos (<img src="https://render.githubusercontent.com/render/math?math=G_{e}">);
-3. Ponderação Gini intragrupos (<img src="https://render.githubusercontent.com/render/math?math=\sum_{h=1}^{k}{\pi_{h}\cdot Y_{h}\cdot G_{h}}">);
+2. Gini intergrupos (<img src="https://render.githubusercontent.com/render/math?math=\large G_{e}">);
+3. Ponderação Gini intragrupos <img src="https://render.githubusercontent.com/render/math?math=\large (\sum_{h=1}^{k}{\pi_{h}\cdot Y_{h}\cdot G_{h}})">;
 4. Gini de sobreposição.
 
 ### →`lorenz(dados)`
@@ -80,7 +81,7 @@ Plota a Curva de Lorenz do conjunto passado como argumento.
 
 
 
-As funções recebem um `pd.Series` (`dados`) ou uma lista de séries (`decomp()`).
+As funções recebem uma `pd.Series` (`dados`) ou uma lista de séries (`decomp()`).
 
 ## Exemplos
 
