@@ -10,7 +10,7 @@ Calculadora do Índice de Gini.
 
 Calculadora de Índice de Gini que permite a decomposição do mesmo em grupos ou estratos presentes no conjunto de dados. O método de cálculo utilizado foi visto na disciplina optativa Análise de Dados Socioeconômicos, oferecida pelo Departamento de Economia da Unesp Araraquara.
 
-Para o conjunto inteiro, a fórmula utilizada é a seguinte:
+Para o conjunto inteiro, a fórmula utilizada é:
 
 <p align = "center">
 <img src="https://render.githubusercontent.com/render/math?math=\large G=1-\frac{1}{n}\cdot\sum_{i=1}^{n}(\phi_{i}%2B\phi_{i-1})">
