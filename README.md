@@ -33,7 +33,7 @@ onde:
 
 <img src="https://render.githubusercontent.com/render/math?math=\large Y_{h}">: proporção da renda acumulada pelo h-ésimo grupo;
 
-<img src="https://render.githubusercontent.com/render/math?math=\large G_h=1-\frac{1}{n_h}\cdot\sum_{i=1}^{n_h}\cdot(\phi_{h,i}%2B\phi_{h,i-1})">: Gini intragrupos (índice de gini de cada grupo);
+<img src="https://render.githubusercontent.com/render/math?math=\large G_h=1-\frac{1}{n_h}\cdot\sum_{i=1}^{n_h}(\phi_{h,i}%2B\phi_{h,i-1})">: Gini intragrupos (índice de gini de cada grupo);
 
 <img src="https://render.githubusercontent.com/render/math?math=\large G_{s}">: Índice de Gini de sobreposição.
 
