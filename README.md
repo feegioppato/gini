@@ -81,7 +81,7 @@ Plota a Curva de Lorenz do conjunto passado como argumento.
 
 
 
-As funções recebem uma `pd.Series` (`dados`) ou uma lista de séries (`decomp()`).
+As funções recebem um `pd.DataFrame` ou uma lista de DataFrames (função `decomp()`).
 
 ## Exemplos
 
