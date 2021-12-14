@@ -15,7 +15,6 @@ class Variaveis:
     def __init__(self, coluna):
         
         self._coluna = coluna
-        pass
         
 
     def n(self, dados):
