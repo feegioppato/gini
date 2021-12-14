@@ -97,7 +97,7 @@ Considerando uma população muito desigual onde uma pessoa concentra toda a ren
 
 ### Função `decomp()`
 
-Para exemplificar a função `decomp()`, utilizei o conjunto de dados *wage1*, presente no pacote `wooldridge`. Este pacote contém todos os conjuntos de dados utilizados no livro **Introdução à Econometria - Jeffrey M. Wooldridge.**
+Para exemplificar a função `decomp()` utilizei o conjunto de dados *wage1*, presente no pacote `wooldridge`. Este pacote contém todos os conjuntos de dados utilizados no livro **Introdução à Econometria - Jeffrey M. Wooldridge.**
 
 Realizei a decomposição do índice de gini para homens e mulheres.
 
