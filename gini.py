@@ -12,7 +12,9 @@ import matplotlib.pyplot as plt
 
 class Variaveis:
     
-    def __init__(self):
+    def __init__(self, coluna):
+        
+        self._coluna = coluna
         pass
         
 
@@ -27,7 +29,7 @@ class Variaveis:
     def renda(self, dados):
         """ Retorna uma série com a renda dos indivíduos do grupo. """
         
-        renda = dados.sort_values()
+        renda = dados[self._coluna].sort_values()
         
         return renda
     
@@ -35,7 +37,7 @@ class Variaveis:
     def renda_total(self, dados):
         """ Retorna a renda total do grupo. """
         
-        renda_total = np.sum(dados)
+        renda_total = np.sum(dados[self._coluna])
         
         return renda_total
 
@@ -55,7 +57,7 @@ class Gini(Variaveis):
         
         """ Calcula as proporçõe de população e renda dos grupos para a decomposição. """
         
-        self._medias = [np.mean(grupo) for grupo in grupos]
+        self._medias = [np.mean(grupo[self._coluna]) for grupo in grupos]
         
         pop = [self.n(dados = grupo) / self.n(dados = dados) for grupo in grupos]
         renda = [self.renda_total(dados = grupo) / self.renda_total(dados = dados) for grupo in grupos]
@@ -73,7 +75,7 @@ class Gini(Variaveis):
         
         gini = 1 - ((1 / self.n(dados)) * np.sum(self.renda_acumulada(dados) + self.renda_acumulada(dados).shift()))
         
-        return round(gini, 6)
+        return round(gini, 5)
 
 
     def decomp(self, grupos, dados):
@@ -98,7 +100,7 @@ class Gini(Variaveis):
                        
         gs = self.gini(dados = dados) - ge - gk
                                       
-        return (gh, round(ge, 6), round(gk, 6), round(gs, 6))
+        return (gh, round(ge, 5), round(gk, 5), round(gs, 5))
         
         
     
