@@ -66,7 +66,7 @@ Calcula o índice de gini do conjunto de dados passado como argumento;
 
 Realiza a decomposição do índice de gini para cada subconjunto passado como argumento (`grupos`)
 
-Retorna uma tupla cujos elementos são, respectivamente:
+Retorna uma tupla cujos elementos são, **respectivamente**:
 
 1. Lista ordenada contendo o índice de gini de cada grupo;
 2. Gini intergrupos (<img src="https://render.githubusercontent.com/render/math?math=\large G_{e}">);
