@@ -42,40 +42,24 @@ Além de calcular e decompor o índice, o script dá também a possibilidade de 
 ## Funções
 
 
-### →`n(dados)`
+→`n(dados)`: Retorna o tamanho do conjunto de dados passado como argumento.
 
-Retorna o tamanho do conjunto de dados passado como argumento.
+→`renda(dados)`: Retorna uma série ordenada da renda dos indivíduos do conjunto de dados;
 
-### →`renda(dados)`
+→`renda_total(dados)`: Retorna a soma das rendas de todos os indivíduos;
 
-Retorna uma série ordenada da renda dos indivíduos do conjunto de dados;
+→`renda_acumulada(dados)`: Retorna uma série ordenada da proporção de renda acumulada pelos indivíduos do conjunto;
 
-### →`renda_total(dados)`
+→`gini(dados)`: Calcula o índice de gini do conjunto de dados passado como argumento;
 
-Retorna a soma das rendas de todos os indivíduos;
-
-### →`renda_acumulada(dados)`
-
-Retorna uma série ordenada da proporção de renda acumulada pelos indivíduos do conjunto;
-
-### →`gini(dados)`
-
-Calcula o índice de gini do conjunto de dados passado como argumento;
-
-### →`decomp(grupos, dados)`
-
-Realiza a decomposição do índice de gini para cada subconjunto passado como argumento (`grupos`)
-
-Retorna uma tupla cujos elementos são, **respectivamente**:
+→`decomp(grupos, dados)`: Realiza a decomposição do índice de gini para cada subconjunto passado como argumento (`grupos`). Retorna uma tupla cujos elementos são, **respectivamente**:
 
 1. Lista ordenada contendo o índice de gini de cada grupo;
 2. Gini intergrupos (<img src="https://render.githubusercontent.com/render/math?math=\large G_{e}">);
 3. Ponderação Gini intragrupos <img src="https://render.githubusercontent.com/render/math?math=\large (\sum_{h=1}^{k}{\pi_{h}\cdot Y_{h}\cdot G_{h}})">;
 4. Gini de sobreposição.
 
-### →`lorenz(dados)`
-
-Plota a Curva de Lorenz do conjunto passado como argumento.
+→`lorenz(dados)`: Plota a Curva de Lorenz do conjunto passado como argumento.
 
 ## Entradas
 
